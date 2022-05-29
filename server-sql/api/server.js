@@ -8,3 +8,9 @@ server.use(express.json());
 server.get("/", (req, res) =>
   res.send("Welcome to your mock assignment!! 👾🐱‍🏍🐱‍👤🤖")
 );
+const bandRoutes = require("./controllers/bands");
+
+server.use("/bands", bandRoutes);
+// server.use("/genre", genreRoutes);
+
+module.exports = server;
