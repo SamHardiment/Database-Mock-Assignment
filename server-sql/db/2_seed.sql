@@ -1,4 +1,4 @@
- INSERT INTO bands (bandName, listeners, genre)
+ INSERT INTO bands (bandName)
  VALUES 
-    ('Avenged Sevenfold', 6534836, 'Metal'),
-    ('Take That', 3856723, 'Pop')
+    ('Avenged Sevenfold'),
+    ('Take That');

@@ -1,5 +1,5 @@
 const express = require("express");
-const cors = requre("cors");
+const cors = require("cors");
 const server = express();
 server.use(cors());
 server.use(express.json());
@@ -8,7 +8,7 @@ server.use(express.json());
 server.get("/", (req, res) =>
   res.send("Welcome to your mock assignment!! 👾🐱‍🏍🐱‍👤🤖")
 );
-const bandRoutes = require("./controllers/bands");
+const bandRoutes = require("./controller/bands");
 
 server.use("/bands", bandRoutes);
 // server.use("/genre", genreRoutes);
